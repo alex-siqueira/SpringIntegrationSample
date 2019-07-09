@@ -1,0 +1,22 @@
+plugins {
+    id 'java-library'
+    id 'eclipse'
+    id "io.spring.dependency-management" version "1.0.8.RELEASE"
+    id 'org.springframework.boot' version '2.1.6.RELEASE'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-integration'
+    implementation 'org.springframework.integration:spring-integration-jdbc'
+    implementation 'org.springframework.integration:spring-integration-amqp'
+		
+		implementation 'mysql:mysql-connector-java:8.0.16'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
